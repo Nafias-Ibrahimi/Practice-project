@@ -4,6 +4,7 @@ const brand=document.querySelector('.brand');
 let img=document.createElement('img');
 img.src='/images/image.png';
 img.alt="logo";
+brand.style.background='var(--color-4)';
 brand.appendChild(img);
 
 let links=[
