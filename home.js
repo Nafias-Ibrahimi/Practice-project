@@ -1,4 +1,10 @@
 const nav=document.querySelector('.nav');
+const brand=document.querySelector('.brand');
+
+let img=document.createElement('img');
+img.src='/images/image.png';
+img.alt="logo";
+brand.appendChild(img);
 
 let links=[
     {text:"Home" , url:"/home"},
