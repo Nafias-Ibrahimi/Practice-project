@@ -13,11 +13,17 @@ const container=document.querySelector('#container');
 // }
 // container.innerHTML=divs;
 
+// for(let i=1; i<=4; i++){
+//     const div=document.createElement('div');
+//     div.className="box";
+//     div.textContent=`box ${i}`;
+//     container.appendChild(div);
+// }
+
 for(let i=1; i<=4; i++){
     const div=document.createElement('div');
-    div.className="box";
+    div.className='box';
     div.textContent=`Box ${i}`;
+    div.style.backgroundColor=`var(--color-2)`;
     container.appendChild(div);
-
-
 }
