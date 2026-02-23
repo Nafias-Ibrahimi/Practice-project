@@ -7,8 +7,17 @@
 // const container=document.querySelector('.container').textContent="Hello second";
 const container=document.querySelector('#container');
 
-let divs="";
+// let divs="";
+// for(let i=1; i<=4; i++){
+//     divs +=`<div class="box">box ${i}</div>`;
+// }
+// container.innerHTML=divs;
+
 for(let i=1; i<=4; i++){
-    divs +=`<div class="box">box ${i}</div>`;
+    const div=document.createElement('div');
+    div.className="box";
+    div.textContent=`Box ${i}`;
+    container.appendChild(div);
+
+
 }
-container.innerHTML=divs;
