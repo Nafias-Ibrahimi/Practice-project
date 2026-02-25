@@ -26,21 +26,26 @@
 //  }
 
 const form = document.querySelector('#signup');
+const input = document.querySelector('#username');
+
+input.addEventListener('input', (e) => {
+    console.log(`you typed ${e.target.value}`);
+});
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
 
-    const username=form.username.value;
-    if(username=trim()===""){
+    const username = form.username.value.trim();
+
+    if (username === "") {
         alert('username can not be empty');
         return;
     }
-    alert('form subimted successfuly!');
+
+    alert('form submitted successfully!');
 
     console.log(username);
     console.log(email);
 });
-
