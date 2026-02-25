@@ -3,8 +3,18 @@
     --color-2:#00f;
     --color-3:#f00;
     --color-4:#fff;
+    --color-5:#05a3e6;
+}
+body{
+    background-color: var( --color-5);
+}
+input[type="submit"]{
+    color:var(--color-5)
 }
 
+
+
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -36,4 +46,4 @@
     color: var(--color-4);
     text-decoration: none;
     padding: 15px;
-}
+} */

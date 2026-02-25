@@ -25,27 +25,29 @@
 //     nav.appendChild(li);
 //  }
 
-const form = document.querySelector('#signup');
-const input = document.querySelector('#username');
+// const form = document.querySelector('#signup');
+// const input = document.querySelector('#username');
 
-input.addEventListener('input', (e) => {
-    console.log(`you typed ${e.target.value}`);
-});
+// input.addEventListener('input', (e) => {
+//     console.log(`you typed ${e.target.value}`);
+// });
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    const email = document.getElementById('email').value;
+//     const email = document.getElementById('email').value;
 
-    const username = form.username.value.trim();
+//     const username = form.username.value.trim();
 
-    if (username === "") {
-        alert('username can not be empty');
-        return;
-    }
+//     if (username === "") {
+//         alert('username can not be empty');
+//         return;
+//     }
 
-    alert('form submitted successfully!');
+//     alert('form submitted successfully!');
 
-    console.log(username);
-    console.log(email);
-});
+//     console.log(username);
+//     console.log(email);
+// });
+
+document.documentElement.style.setProperty('--color-5','#05a3e6');
