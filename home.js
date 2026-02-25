@@ -51,3 +51,11 @@
 // });
 
 document.documentElement.style.setProperty('--color-5','#05a3e6');
+
+const toggle=document.querySelector('#toggleThem');
+toggle.addEventListener('click',()=>{
+    document.body.classList.toggle("dark-mode");
+
+});
+
+
