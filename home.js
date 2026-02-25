@@ -50,12 +50,23 @@
 //     console.log(email);
 // });
 
-document.documentElement.style.setProperty('--color-5','#05a3e6');
+// document.documentElement.style.setProperty('--color-5','#05a3e6');
 
-const toggle=document.querySelector('#toggleThem');
-toggle.addEventListener('click',()=>{
-    document.body.classList.toggle("dark-mode");
+// const toggle=document.querySelector('#toggleThem');
+// toggle.addEventListener('click',()=>{
+//     document.body.classList.toggle("dark-mode");
 
-});
+// });
 
+const freqment=document.createDocumentFragment();
+
+for(let i=1; i<100; i++){
+    const li=document.createElement('li');
+        li.textContent=`item ${i}`;
+        freqment.appendChild(li);
+
+    
+}
+
+document.querySelector('ul').appendChild(freqment);
 
