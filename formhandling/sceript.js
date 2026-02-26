@@ -1,11 +1,14 @@
 const  addField=document.querySelector('#addField');
-const fieldContanier=document.querySelector('#fieldContanier')
+const contanier=document.querySelector('#fieldContanier')
 // const submirForm=document.querySelector('#submirForm');
  let count=0;
  addField.addEventListener('click' ,()=>{
     count++;
     const input=document.createElement('input');
     input.type="text";
-    fieldContanier.appendChild(input);
+    input.placeholder=`field ${count}`;
+    input.className="form-field";
+
+     contanier.appendChild(input);
 
  })
