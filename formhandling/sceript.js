@@ -4,5 +4,8 @@ const fieldContanier=document.querySelector('#fieldContanier')
  let count=0;
  addField.addEventListener('click' ,()=>{
     count++;
-    console.log(count);
+    const input=document.createElement('input');
+    input.type="text";
+    fieldContanier.appendChild(input);
+
  })
