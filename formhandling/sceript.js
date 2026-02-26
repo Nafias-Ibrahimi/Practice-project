@@ -40,11 +40,36 @@
 
 // basic Fetch Exmaple
 
-document.getElementById('fetchBtn').addEventListener('click' ,()=>{
-    fetch('https://jsonplaceholder.typicode.com/posts/1')
-    .then((response)=>response.json())
-    .then((data)=> console.log("Fetch Post:",data))
-    .then((data)=> document.writeln("Fetch Post:",data))
-    .catch((err)=>console.log("Error:" ,err))
+// document.getElementById('fetchBtn').addEventListener('click' ,()=>{
+//     fetch('https://jsonplaceholder.typicode.com/posts/1')
+//     .then((response)=>response.json())
+//     .then((data)=> console.log("Fetch Post:",data))
+//     .then((data)=> document.writeln("Fetch Post:",data))
+//     .catch((err)=>console.log("Error:" ,err))
 
-})
+// })
+
+const form = document.querySelector('#Signpform');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+        username: form.username.value,
+        email: form.email.value,
+    };
+
+    try {
+        const res = await fetch('/api/register', {
+            method: "POST",
+            
+            body: JSON.stringify(formData)
+        });
+
+        const result = await res.json();
+        console.log("Response:", result);
+
+    } catch (error) {
+        console.error('Submission Error:', error);
+    }
+});
