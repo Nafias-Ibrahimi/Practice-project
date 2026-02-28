@@ -136,4 +136,13 @@ person.age=24;
 person.city="Kabul";
 console.log(person);
 
+const car={
+  brand:"Toyota",
+  year:2020
+}
+Object.freeze(car);
+car.brand="corola";
+car.year=2026;
+console.log(car);
+
 
