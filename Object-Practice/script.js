@@ -120,10 +120,10 @@
 
 
 // freeze object
-let obj1={b:2};
-Object.freeze(obj1);
-obj1.a=99;
-console.log(obj1);
+// let obj1={b:2};
+// Object.freeze(obj1);
+// obj1.a=99;
+// console.log(obj1);
 
 
 let person={
@@ -131,5 +131,9 @@ let person={
   age:20
 }
 Object.freeze(person);
+
+person.age=24;
+person.city="Kabul";
+console.log(person);
 
 
