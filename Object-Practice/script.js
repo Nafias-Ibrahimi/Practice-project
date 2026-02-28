@@ -145,4 +145,20 @@ car.brand="corola";
 car.year=2026;
 console.log(car);
 
+const students={
+  name:"Zahra",
 
+};
+Object.freeze(students);
+students.age=14;
+console.log(students);
+
+
+const phone={
+  model:'iphone',
+  price:70000
+};
+Object.freeze(phone);
+phone.model='samsung';
+phone.price=80000;
+console.log(phone);
