@@ -1,91 +1,135 @@
-let book={
-    title:"Atomic Habits",
-    author:"James Clear",
-    year:2018
-}
-console.log(book);
+// . Create an object book with title, author, and year. Add a new property pages.
 
-function printCar(car){
-console.log("Brand:"+ car.brand);
+// let book = {
+//   title: "Atomic Habits",
+//   author: "James Clear",
+//   year: 2018,
 
-}
-    let car={
-    brand:"Toyota",
-    year:2024,
-    model:"camry"
-}
+// };
+// book.pages=220;
+// console.log(book);
 
-printCar(car);
+// Write a function that takes a car object and prints brand and year.
 
-function printCarInfo(car){
-    return `Brand:, ${car.brand}, year:,${car.year},model:,${car.model}`;
-}
-console.log(printCarInfo({brand:"Acura Integra" ,year:"2025" , model:"camry"}));
+// function printCar(car) {
+//   console.log("Brand:" + car.brand, "year:" +car.year);
+// }
+// let car = {
+//   brand: "Toyota",
+//   year: 2024,
+//   model: "camry",
+// };
 
+// printCar(car);
 
-let school={
-    name:"Ali",
-    lName:"Ahmadi",
-    age:23,
-    Teacher:{
-        name:"Maryam",
-        lName:"Zafari",
-        salary:10000,
-    }
-    
-}
-console.log(school.Teacher.salary);
-console.log(school.name);
+// function printCarInfo(car) {
+//   return `Brand:, ${car.brand}, year:,${car.year},model:,${car.model}`;
+// }
+// console.log(
+//   printCarInfo({ brand: "Acura Integra", year: "2025", model: "camry" }),
+// );
 
 
-const {Teacher ,name}=school;
-console.log(Teacher.salary);
-console.log(name);
+// Create a nested object school with teachers and students. Access one teacher’s subject.
 
-let classroom={
-    className:"A",
-    teacher:{
-        name:"Sara",
-        subjec:"Math"
-    },
-    students:["Ali" ,"Ahmad" ,"Maryam"]
-};
 
-let shallowClass={...classroom};
-    shallowClass.className="B";
-    shallowClass.teacher.subjec="Physics";
-    shallowClass.students.push("Nafisa");
-    console.log("Original:" ,classroom);
-    console.log("Shallow copy:", shallowClass);
+// let school = {
+//   name: "Ibrahim Shaheed hight school",
+//   address: "barchi",
+//   students: {
+//     name: "Ali",
+//     lName: "Ahmadi",
+//     age: 23,
+//   },
+
+//   Teacher: {
+//     name: "Maryam",
+//     lName: "Zafari",
+//     salary: 10000,
+//     subject:"Math"
+//   },
+// };
+// console.log(school.Teacher.salary);
+// console.log(school.name);
+
+// const { Teacher, name } = school;
+// console.log(Teacher.subject);
+// console.log(school);
+
+// Make a shallow copy and prove how it differs from a deep copy.
+
+// let classroom = {
+//   className: "A",
+//   teacher: {
+//     name: "Sara",
+//     subjec: "Math",
+//   },
+//   students: ["Ali", "Ahmad", "Maryam"],
+// };
+
+
+// let shallowClass = { ...classroom };
+// shallowClass.className = "B";
+// shallowClass.teacher.subjec = "Physics";
+// shallowClass.students.push("Nafisa");
+// console.log("Original:", classroom);
+// console.log("Shallow copy:", shallowClass);
+
+// let person = {
+//   name: "ali",
+//   lastNmae:"Ibrahimi",
+//   address: {
+//     city: "Kabul",
+//     country: "Afghanistan",
+//   },
+// };
+
+// let shallowPerson = { ...person };
+// shallowPerson.name = "Reza";
+
+// shallowPerson.address.city = "Herat";
+// console.log("Original:", person);
+// console.log("ShallowPerson:", shallowPerson);
+
+
+// Use destructuring to extract values from an object.
+
+// let persons = {
+//   Name: "Mahsa",
+//   address: {
+//     city: "Kabul",
+//     country: "Afg",
+//   },
+// };
+
+
+// let { Name, address } = persons;
+
+// console.log(Name); 
+// console.log(address); 
+
+// let products=[
+//   { id:1,  names:"laptop", brand:"lenovo",  price:20000},
+//   { id:2,  names:"desktab", brand:"dell",  price:10000},
+//   { id:3,  names:"phone", brand:"apple",  price:60000},
+// ]
+ 
+
+// let {names , brand, price}=products[0];
+// console.log(`"name:" ${names} ,"brand:" ${brand}`);
+
+
+// freeze object
+let obj1={b:2};
+Object.freeze(obj1);
+obj1.a=99;
+console.log(obj1);
 
 
 let person={
-    name:'ali',
-    address:{
-        city:'Kabul',
-        country:'Afghanistan'
-    }
-};
-
-let shallowPerson={...person};
-shallowPerson.name="Reza";
-
-shallowPerson.address.city="Herat";
-console.log("Original:", person);
-console.log("ShallowPerson:", shallowPerson);
+  name:"Ahmad",
+  age:20
+}
+Object.freeze(person);
 
 
-
-let persons = {
-    Name: "Mahsa",
-    address: {
-         city: "Kabul",
-         country: "Afg"
-    }
-};
-
-// Destructure
-let { Name, address } = persons;
-
-console.log(Name);    // Mahsa
-console.log(address); // { city: 'Kabul', country: 'Afg' }
