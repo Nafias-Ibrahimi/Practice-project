@@ -68,3 +68,16 @@ fruites:["Apple" ,"Banana" ,"Grapes"]
 food["my favorite food is"]="Pizza";
 console.log(food["my favorite food is"]);
 console.log(food);
+
+
+let key="score";
+student[key]=90;
+console.log(student);
+
+
+
+let books={title:"chemistry" ,pages:200};
+books.pages=260;
+books.title="Mathematic";
+console.log(books);
+
