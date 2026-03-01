@@ -162,3 +162,4 @@ Object.freeze(phone);
 phone.model='samsung';
 phone.price=80000;
 console.log(phone);
+
