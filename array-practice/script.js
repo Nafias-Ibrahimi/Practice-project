@@ -68,6 +68,18 @@ console.log(fruits);
 // o Sort an array of names alphabetically.
 // o Reverse the result
 
+let names=["Reza" ,"Ali" ,"Sara" ,"Nafisa" ,"Ahmad"];
+console.log("names:" ,names);
+
+let sortedName=names.sort();
+console.log(sortedName);
+names.slice().sort();
+console.log("sorted names:",sortedName);
+
+let reversedName=sortedName.slice().reverse();
+
+console.log("Reversed names:" ,reversedName);
+
 
 
 
