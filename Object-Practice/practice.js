@@ -94,12 +94,25 @@ console.log(books);
  console.log("city:" ,users.address.city,"country:" ,users.address.country);
 
 
- let commany={
+ let company1={
     name:"TechWorld",
     employees:{
         dev:{name:"Ali", role:"Developer" },
         designer:{name:"Reza" ,postion:"eng"}
     }
  };
- console.log(commany.employees ,commany.name ,commany.designer);
- console.log(commany);
+ console.log(company1.employees ,company1.name ,company1.designer);
+ console.log(company1);
+
+ let {name ,employees}=company1;
+ let {dev}=employees;
+ console.log(company1.employees.designer.name ,company1.employees.dev.role);
+
+console.log(company1.name);
+
+
+let student_1=[
+    {name:"Nafisa" , grade:"A"},
+    {name:"Ahmad" , grade:"B"}
+];
+console.log(`"name:" ${student_1[0].name}  , "Grade:" ${student_1[0].grade}`);
