@@ -116,3 +116,12 @@ let student_1=[
     {name:"Ahmad" , grade:"B"}
 ];
 console.log(`"name:" ${student_1[0].name}  , "Grade:" ${student_1[0].grade}`);
+
+
+let user_1={
+    id:1,
+    name:"Arsam"
+};
+console.log(Object.keys(user_1));
+console.log(Object.values(user_1));
+console.log(Object.entries(user_1));
