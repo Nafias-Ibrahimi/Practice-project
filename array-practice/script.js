@@ -124,9 +124,20 @@ console.log("first element :", first);
 console.log("second element:" ,second);
 console.log("Rest of array:" ,rest);
 
-// 
+
+// o Write a function that receives any array of numbers and returns the average using reduce().
 
 
+function average(numbers){
+    if(numbers.length === 0)
+        return 0;
 
+    let sum = numbers.reduce((acc, curr) => acc + curr, 0);
 
+    return sum / numbers.length;
+}
+
+let num1 = [10, 20, 30, 40, 50];
+
+console.log("Average:", average(num1));
 
