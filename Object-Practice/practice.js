@@ -57,3 +57,14 @@ let {brand , company ,model}=phones;
 console.log(phones);
 console.log("brand:" ,phones.brand , "price:" ,phones.price, "model:" ,phones.model);
 
+let obj={};
+obj["favorite color"]="blue";
+console.log(obj["favorite color"]);
+
+let food={
+names:["Rice" ,"Pizza" ,"Chicken" ,"Fish" ,"Potato"],
+fruites:["Apple" ,"Banana" ,"Grapes"]
+};
+food["my favorite food is"]="Pizza";
+console.log(food["my favorite food is"]);
+console.log(food);
