@@ -92,3 +92,14 @@ console.log(books);
  };
  console.log("name: ", users.name);
  console.log("city:" ,users.address.city,"country:" ,users.address.country);
+
+
+ let commany={
+    name:"TechWorld",
+    employees:{
+        dev:{name:"Ali", role:"Developer" },
+        designer:{name:"Reza" ,postion:"eng"}
+    }
+ };
+ console.log(commany.employees ,commany.name ,commany.designer);
+ console.log(commany);
