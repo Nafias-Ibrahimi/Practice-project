@@ -79,5 +79,16 @@ console.log(student);
 let books={title:"chemistry" ,pages:200};
 books.pages=260;
 books.title="Mathematic";
+
+delete books.pages;
 console.log(books);
 
+ let users={
+    name:"Sara",
+    address:{
+        city:"Wardak",
+        country:"Afg"
+    }
+ };
+ console.log("name: ", users.name);
+ console.log("city:" ,users.address.city,"country:" ,users.address.country);
