@@ -54,8 +54,20 @@ let square=nums.map(num => num * num);
 console.log("squar:" ,square);
 
 let filtered=square.filter(num => num >10);
-let sum=filtered.reduce((acc ,curr) => acc +curr , 0);
+let sum=filtered.reduce((acc ,curr) => acc + curr , 0);
 console.log(`"filtered:" ${filtered}`);
+console.log("sum :" , sum);
+
+let fruits=["Apple" ,"banana" ,"kiwi" ,"mango" ,"pear"];
+console.log(fruits);
+ let upperFruits=fruits.map(fruit => fruit.toUpperCase());
+ console.log("Uppercase fruits:" ,upperFruits);
+
+
+// 3. Write code to:
+// o Sort an array of names alphabetically.
+// o Reverse the result
+
 
 
 
