@@ -112,5 +112,21 @@ let allNumber=numbers.every(num => num > 80);
 console.log("allNumbers:" ,allNumber);
 
 
+// 5. Combine two arrays using spread syntax, then destructure the first two elements
+
+let fruit_arr=['apple' ,'banana' ,'kiwi'];
+let vegetables=["carrot" , "tomato" ,"spinach"];
+let combined=[...fruit_arr , ...vegetables];
+console.log("conbined array:", combined);
+
+let {first , second, ... rest}=combined;
+console.log("first element :", first);
+console.log("second element:" ,second);
+console.log("Rest of array:" ,rest);
+
+// 
+
+
+
 
 
