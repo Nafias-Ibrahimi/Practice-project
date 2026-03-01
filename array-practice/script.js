@@ -82,6 +82,35 @@ console.log("Reversed names:" ,reversedName);
 
 
 
+// 4. Create an array of student objects (name, score).
+// o Use find() to get the first student with score > 80.
+// o Use every() to check if all have scores > 50.
+
+let students=[
+    {name:"Ali" , score:70},
+    {name:"Zahra" , score:45},
+    {name:"Ahamd" , score:80},
+    {name:"Maryam" , score:90},
+];
+let topStudent=students.find(student =>student.score >80);
+console.log("First student with score > 80:" , topStudent);
+
+let allPassed=students.every(student => student.score >50);
+console.log(`"Do all students have score> 50:" ${allPassed}`);
+
+let numbers=[24, 90, 80 , 50 , 70 ,100 ,2];
+console.log(numbers);
+
+console.log("numbers sorted :", numbers.sort((a , b) => a - b));
+
+let firstName=numbers.find(num =>num > 80);
+console.log(`"first number: ${firstName}`);
+
+
+
+let allNumber=numbers.every(num => num > 80);
+console.log("allNumbers:" ,allNumber);
+
 
 
 
