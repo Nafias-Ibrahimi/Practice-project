@@ -1,25 +1,25 @@
-const user={
-    name:"Ali",
-    age:15,
-    email:"ali@gamil.com",
-};
-console.log(user.name);
-console.log(user["age"]);
+// const user={
+//     name:"Ali",
+//     age:15,
+//     email:"ali@gamil.com",
+// };
+// console.log(user.name);
+// console.log(user["age"]);
 
-console.log(`name: ${user.name}, "age:" ${user.age},"email:" ${user.email}`);
+// console.log(`name: ${user.name}, "age:" ${user.age},"email:" ${user.email}`);
 
-let cars={
-    brand:"Totyota",
-    model:"camry",
-    year:2020
-};
+// let cars={
+//     brand:"Totyota",
+//     model:"camry",
+//     year:2020
+// };
 
-console.log(cars);
+// console.log(cars);
 
 
 
-let {brand, model}=cars;
-console.log(`"brand:" ${cars.brand} , "model: ${cars.model}`);
+// let {brand, model}=cars;
+// console.log(`"brand:" ${cars.brand} , "model: ${cars.model}`);
 
 
 let persons={
@@ -37,4 +37,23 @@ console.log(persons.hobbies ,persons.address.country);
 
 
 
+let student={};
+student.name="Zahra",
+student.age=20;
+
+student["grade"]="A";
+student["position"]="moster";
+console.log(student);
+
+let phones={};
+phones.name="iphone";
+phones.brand="apple";
+phones.price=20000;
+phones["company"]="apple";
+phones["model"]="iPhone 15";
+
+let {brand , company ,model}=phones;
+
+console.log(phones);
+console.log("brand:" ,phones.brand , "price:" ,phones.price, "model:" ,phones.model);
 
